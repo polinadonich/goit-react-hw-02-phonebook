@@ -21,10 +21,7 @@ function ContactList({ contacts, deleteContact }) {
 }
 
 ContactList.prototype = {
-  id: PropTypes.string.isRequired,
-  name: PropTypes.string.isRequired,
-  number: PropTypes.number.isRequired,
-
+  filter: PropTypes.array.isRequired,
   deleteContact: PropTypes.func.isRequired,
 };
 
